@@ -3,88 +3,249 @@
 <head>
     <meta charset="UTF-8">
     <title>Explore</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+          crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f4de629fe0.js" crossorigin="anonymous"></script>
     <link href="index.css"
           rel="stylesheet"/>
-    <link href="../styles.css"
-          rel="stylesheet"/>
 </head>
-<body class="wd-bg-color-black">
-<div class="wd-border-grey wd-left-offset wd-search-padding">
-    <label>
-        <input type="text" class="
-        wd-bg-color-darkgrey
-        wd-rounded-corners-all-around
-        wd-fg-color-white
-        wd-border-grey
-        wd-border-thin
-        wd-grid-col-90-page
-        wd-textbox-height" placeholder="Search Tuiter"/>
-    </label>
-    <div class="wd-settings-offset">
-        <a href="explore-settings.html"><img class="wd-settings-height" src="settings.png"></a>
+<body>
+<div class="d-block d-sm-none fa-2x">XS</div>
+<div class="d-none d-sm-block d-md-none fa-2x">S</div>
+<div class="d-none d-md-block d-lg-none fa-2x">M</div>
+<div class="d-none d-lg-block d-xl-none fa-2x">L</div>
+<div class="d-none d-xl-block d-xxl-none fa-2x">XL</div>
+<div class="d-none d-xxl-block fa-2x">XXL</div>
+<div class="row">
+    <div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 col-xxl-1"></div>
+    <div class="col-1 col-sm-1 col-md-2 col-lg-1 col-xl-2 col-xxl-2">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <a class="wd-no-underline text-dark" href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a class="wd-no-underline text-dark" href="../home.html">
+                    <i class="fa-solid fa-house-chimney"></i>
+                    <span class="d-none d-xl-inline">Home</span>
+                </a>
+            </li>
+            <li class="list-group-item active">
+                <a class="wd-no-underline text-white" href="#">
+                    <i class="fa-solid fa-hashtag"></i>
+                    <span class="d-none d-xl-inline"> Explore</span>
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a class="wd-no-underline text-dark" href="../notifications.html">
+                    <i class="fa-solid fa-bell"></i>
+                    <span class="d-none d-xl-inline"> Notifications</span>
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a class="wd-no-underline text-dark" href="../messages.html">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="d-none d-xl-inline"> Messages</span>
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a class="wd-no-underline text-dark" href="../bookmarks/index.html">
+                    <i class="fa-solid fa-bookmark"></i>
+                    <span class="d-none d-xl-inline"> Bookmarks</span>
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a class="wd-no-underline text-dark" href="../lists.html">
+                    <i class="fa-solid fa-list"></i>
+                    <span class="d-none d-xl-inline"> Lists</span>
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a class="wd-no-underline text-dark" href="../profile.html">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="d-none d-xl-inline"> Profile</span>
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a class="wd-no-underline text-dark" href="../more.html">
+                    <i class="fa-solid fa-ellipsis"></i>
+                    <span class="d-none d-xl-inline"> More</span>
+                </a>
+            </li>
+            <li class="list-group-item border-0">
+                <a class="wd-no-underline text-dark" href="../more.html">
+                    <button class="btn btn-primary rounded-pill wd-button-big">Tuit</button>
+                </a>
+            </li>
+        </ul>
     </div>
-    <div class="wd-float-done"></div>
-</div>
+    <div class="col-6 col-sm-6 col-med-6 col-lg-6 col-xl-5 col-xxl-5">
+        <div class="input-group mb-2">
+            <span class="input-group-text border-0 wd-bg-white"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <input type="text" class="form-control rounded-pill border-left-0" placeholder="Search Tuiter">
+            <span class="input-group-text rounded-pill wd-bg-white border-0"><i class="fa-solid fa-gear wd-blue"></i></span>
+        </div>
+        <ul class="nav nav-tabs mb-2">
+            <li class="nav-item">
+                <a class="nav-link active text-dark" href="#">For you</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Trending</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Sports</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Entertainment</a>
+            </li>
+        </ul>
+        <div class="wd-container">
+            <img width="100%" src="starship.webp"/>
+            <div class="wd-bottom-left-text wd-font-24">SpaceX's Starship</div>
+        </div>
 
-<div class="wd-border-grey wd-left-offset">
-    <div class="wd-hyperlinks"> <a class="wd-no-blue wd-first-hyperlink" href="for-you.html">For you</a> </div>
-    <div class="wd-hyperlinks"> <a class="wd-no-blue wd-rest-hyperlink" href="trending.html">Trending</a> </div>
-    <div class="wd-hyperlinks"> <a class="wd-no-blue wd-rest-hyperlink" href="covid19.html">COVID-19</a> </div>
-    <div class="wd-hyperlinks"> <a class="wd-no-blue wd-rest-hyperlink" href="news.html">News</a> </div>
-    <div class="wd-hyperlinks"> <a class="wd-no-blue wd-rest-hyperlink" href="sports.html">Sports</a> </div>
-    <div class="wd-hyperlinks"> <a class="wd-no-blue wd-rest-hyperlink" href="entertainment.html">Entertainment</a> </div>
-    <div class="wd-float-done"></div>
-</div>
-<div class="wd-border-grey wd-left-offset wd-general-padding">
-    <div class="wd-trending">Trending in Science</div>
-    <div class="wd-white-title">Sensationalist Headline Without Peer-Reviewed Source</div>
-    <div class="wd-trending">99.9K Tuits</div>
-    </br>
-    <div class="wd-trending">Celebrities - Trending</div>
-    <div class="wd-white-title">Kardashian Family Member Breathes Oxygen</div>
-    <div class="wd-trending">999.9K Tuits</div>
-</div>
-<div class="wd-border-grey wd-left-offset wd-general-padding">
-    <div class="wd-float-left">
-        <span class="wd-trending-author">News Article</span>
-        <span class="wd-trending"> - Today</span>
-        </br> </br>
-        <div class="wd-white-title">Lorem Ipsum and Things of That Nature</div>
-    </div>
-    <div class="wd-picture-offset">
-        <img class="wd-rounded-corners-all-around wd-image-dimensions" src="mee_haw.jpg">
-    </div>
-    <div class="wd-float-done"></div>
-    <div class="wd-float-left">
-        <span class="wd-trending-author">Celebrity</span>
-        <span class="wd-trending"> - Yesterday</span>
-        </br> </br>
-        <div class="wd-white-title">Science Take from Someone Who Has No Experience in The Field</div>
-    </div>
-    </br>
-    <div class="wd-picture-offset">
-        <img class="wd-rounded-corners-all-around wd-image-dimensions" src="spongebob.webp">
-    </div>
-    <div class="wd-float-done"></div>
-</div>
-<div class="wd-border-grey wd-left-offset wd-general-padding">
-    <div class="wd-float-left">
-        <div class="wd-trending">Drama - Live</div>
-        <div class="wd-white-title">Lorem Ipsum and Things of That Nature</div>
-    </div>
-    <div class="wd-picture-offset">
-        <img class="wd-rounded-corners-all-around wd-image-dimensions" src="bojji.PNG">
-    </div>
-    <div class="wd-float-done"></div>
-    </br>
-    <div class="wd-float-left">
-        <div class="wd-trending">Lorem Ipsum - Live</div>
-        <div class="wd-white-title">I am too braindead to think of witty things to say</div>
-    </div>
-    <div class="wd-picture-offset">
-        <img class="wd-rounded-corners-all-around wd-image-dimensions" src="eyes.jpg">
-    </div>
-    <div class="wd-float-done"></div>
-</div>
 
+        <div class="border rounded row">
+            <div class="col-10">
+                <div class="text-muted">Web Development</div>
+                <div>
+                    <span class="fw-bold">ReactJs</span>
+                    <span class="text-muted"> - 2h</span>
+                </div>
+                <div class="fw-bold">React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs</div>
+            </div>
+            <div class="col-2">
+                <img class="wd-explore-post-img rounded" src="react.png"/>
+            </div>
+        </div>
+        <div class="border rounded row">
+            <div class="col-10">
+                <div>
+                    <span class="fw-bold">JavaScript</span>
+                    <span class="text-muted"> - 2h</span>
+                </div>
+                <div class="fw-bold">JavaScript is a programming language that can run on browsers as well as desktops</div>
+                <div class="text-muted">123K Tuits</div>
+            </div>
+            <div class="col-2">
+                <img class="wd-explore-post-img rounded" src="js.png"/>
+            </div>
+        </div>
+        <div class="border rounded row">
+            <div class="col-10">
+                <div class="text-muted">Web Development</div>
+                <div class="fw-bold">jQuery</div>
+                <div class="text-muted">123K Tuits</div>
+            </div>
+            <div class="col-2">
+                <img class="wd-explore-post-img rounded" src="jquery.png"/>
+            </div>
+        </div>
+        <div class="border rounded row">
+            <div class="col-10">
+                <div class="text-muted">Web Development</div>
+                <div>
+                    <span class="fw-bold">NodeJS</span>
+                    <span class="text-muted"> - 2h</span>
+                </div>
+                <div class="text-muted">123K Tuits</div>
+            </div>
+            <div class="col-2">
+                <img class="wd-explore-post-img rounded" src="node.png"/>
+            </div>
+        </div>
+    </div>
+    <div class="d-none d-lg-block col-2 col-lg-3 col-xl-3 col-xxl-3">
+        <ul class="list-group">
+            <li class="list-group-item fw-bold">Who to follow</li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">
+                        <img class="wd-follow-img rounded-circle" src="java.png"/>
+                    </div>
+                    <div class="col-6">
+                        <div class="fw-bold wd-font-12">Java</div>
+                        <div class="wd-font-12">@Java</div>
+                    </div>
+                    <div class="col-4">
+                        <button class="btn btn-primary rounded-pill">
+                            Follow
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">
+                        <img class="wd-follow-img rounded-circle" src="relativity.avif"/>
+                    </div>
+                    <div class="col-6">
+                        <div class="fw-bold wd-font-12">Relativity Space</div>
+                        <div class="wd-font-12">@relativityspace</div>
+                    </div>
+                    <div class="col-4">
+                        <button class="btn btn-primary rounded-pill">
+                            Follow
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">
+                        <img class="wd-follow-img rounded-circle" src="virgin-logo-vector.svg"/>
+                    </div>
+                    <div class="col-6">
+                        <div class="fw-bold wd-font-12">Virgin Galactic</div>
+                        <div class="wd-font-12">@virgingalactic</div>
+                    </div>
+                    <div class="col-4">
+                        <button class="btn btn-primary rounded-pill">
+                            Follow
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">
+                        <img class="wd-follow-img rounded-circle" src="nasa.webp"/>
+                    </div>
+                    <div class="col-6">
+                        <div class="fw-bold wd-font-12">NASA</div>
+                        <div class="wd-font-12">@NASA</div>
+                    </div>
+                    <div class="col-4">
+                        <button class="btn btn-primary rounded-pill">
+                            Follow
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">
+                        <img class="wd-follow-img rounded-circle" src="tesla.webp"/>
+                    </div>
+                    <div class="col-6">
+                        <div class="fw-bold wd-font-12">Tesla</div>
+                        <div class="wd-font-12">@Tesla</div>
+                    </div>
+                    <div class="col-4">
+                        <button class="btn btn-primary rounded-pill">
+                            Follow
+                        </button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 col-xxl-1"></div>
+</div>
 </body>
