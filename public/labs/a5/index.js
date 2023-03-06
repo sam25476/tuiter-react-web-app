@@ -107,7 +107,7 @@ console.log(numberArray1);
 console.log(stringArray1);
 console.log(variableArray1);
 
-console.log('Array index and length');
+console.log('Array index.js and length');
 const length1 = numberArray1.length;
 const index1 = numberArray1.indexOf(3);
 console.log(length1);
@@ -142,7 +142,7 @@ const string3 = stringArray1.find(a => a === 'string3');
 console.log(four);
 console.log(string3);
 
-console.log('Find index');
+console.log('Find index.js');
 const fourIndex = numberArray1
     .findIndex(a => a === 4);
 const string3Index = stringArray1
