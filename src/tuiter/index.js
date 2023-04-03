@@ -9,7 +9,9 @@ import {Provider} from "react-redux";
 import HomeComponent from "./home";
 import WhoToFollowList from "./who-to-follow-list";
 const store = configureStore(
-    {reducer: {who: whoReducer, tuits: tuitsReducer}});
+    {reducer: {
+            who: whoReducer,
+            tuitsData: tuitsReducer}});
 function Tuiter() {
     return (
         <Provider store={store}>
