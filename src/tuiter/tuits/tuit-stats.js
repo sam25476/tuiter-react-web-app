@@ -31,11 +31,18 @@ const TuitStats = (
             {tuit.retuits}
         </div>
             <div className={"col"}>
-                <i onClick={() => dispatch(
+                {tuit.liked && <i onClick={() => dispatch(
                     updateTuitThunk({
                                         ...tuit,
-                                        likes: tuit.likes + 1
-                    }))} className="bi bi-heart-fill me-2 text-danger"></i>
+                                        likes: (tuit.liked ? tuit.likes - 1 : tuit.likes + 1),
+                                        liked: !tuit.liked
+                    }))} className="bi bi-heart-fill me-2 text-danger"></i>}
+                {!tuit.liked && <i onClick={() => dispatch(
+                    updateTuitThunk({
+                                        ...tuit,
+                                        likes: (tuit.liked ? tuit.likes - 1 : tuit.likes + 1),
+                                        liked: !tuit.liked
+                                    }))} className="bi bi-heart me-2"></i>}
                 {tuit.likes}
             </div>
         <div className="col">
